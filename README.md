@@ -8,11 +8,11 @@ I want to implement blue-green deployment for my home automation system, which m
 
 ## Configuration
 
-TODO. The only configuration necessary is the serial settings.
+TODO. The only configuration necessary are the serial port settings and the HTTP port to listen on.
 
-## API
+## JSON-RPC API
 
-A single JSON-RPC method is available.
+The API root is available at `/api`. A single JSON-RPC method is available.
 
 ### `transmit`
 
@@ -80,3 +80,7 @@ Date: Sat, 08 Jul 2017 12:04:08 GMT
     "id": 3
 }
 ```
+
+## Healthcheck
+
+A healthcheck endpoint is available at `/health` which will always return a 200 response. This is because the application will quit if any errors are experienced (inability to listen on HTTP port; serial port issues). The healthcheck is used in the Docker image.
