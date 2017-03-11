@@ -28,4 +28,4 @@ COPY test /usr/src/app/test
 
 # Run
 ENV NODE_ENV=production
-CMD ["node", "src/main.js"]
+CMD ["node", "src/index.js"]

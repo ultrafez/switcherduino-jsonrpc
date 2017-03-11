@@ -4,7 +4,8 @@
   "description": "JSON-RPC 2.0 API interface to an Arduino running switcherduino firmware",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
