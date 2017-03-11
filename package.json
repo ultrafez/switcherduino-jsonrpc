@@ -14,5 +14,12 @@
   "author": "Alex Silcock",
   "license": "UNLICENSED",
   "homepage": "https://bitbucket.org/asilcock/switcherduino-jsonrpc#readme",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "jayson": "^2.0.3",
+    "serialport": "^4.0.7"
+  }
 }
