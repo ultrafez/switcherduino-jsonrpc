@@ -1,0 +1,17 @@
+{
+  "name": "switcherduino-jsonrpc",
+  "version": "0.0.0",
+  "description": "JSON-RPC 2.0 API interface to an Arduino running switcherduino firmware",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/asilcock/switcherduino-jsonrpc.git"
+  },
+  "author": "Alex Silcock",
+  "license": "UNLICENSED",
+  "homepage": "https://bitbucket.org/asilcock/switcherduino-jsonrpc#readme",
+  "private": true
+}
