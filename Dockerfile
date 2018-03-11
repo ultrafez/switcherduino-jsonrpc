@@ -1,4 +1,4 @@
-FROM node:6-slim
+FROM node:8-slim
 MAINTAINER Alex Silcock (@ultrafez)
 
 HEALTHCHECK CMD curl -f http://localhost/health || exit 1
@@ -15,7 +15,7 @@ WORKDIR /usr/src/app
 ENV HOME=/tmp
 
 USER app
-EXPOSE 80
+EXPOSE 8080
 
 # Install deps
 COPY package.json /usr/src/app/
