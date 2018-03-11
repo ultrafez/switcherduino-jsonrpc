@@ -1,14 +1,15 @@
 'use strict';
 
-const jayson = require('jayson');
+const httpPort = process.env.HTTP_PORT || 8080;
+const serialPort = process.env.SERIAL_PORT || '/dev/null';
+const baudRate = parseInt(process.env.BAUD_RATE, 10) || 115200;
 
-// create a server
-const server = jayson.server({
-    add: function(args, callback) {
-        callback(null, args[0] + args[1]);
-    }
-});
+const App = require('./App');
 
-server.http().listen(8008);
+console.log('Configuration:');
+console.log(`httpPort: ${httpPort}`);
+console.log(`serialPort: ${serialPort}`);
+console.log(`baudRate: ${baudRate}`);
 
-console.log('Listening on :8008');
+const app = new App(httpPort, serialPort, baudRate);
+app.start();

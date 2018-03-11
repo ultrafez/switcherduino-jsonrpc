@@ -8,7 +8,11 @@ I want to implement blue-green deployment for my home automation system, which m
 
 ## Configuration
 
-TODO. The only configuration necessary are the serial port settings and the HTTP port to listen on.
+Configuration is done using environment variables.
+
+`HTTP_PORT`: What HTTP port should the server listen on? Defaults to 8080.
+`SERIAL_PORT`: Which serial port should the app use to connect to the Arduino? Defaults to `/dev/null`. Example: `/dev/ttyUSB0`
+`BAUD_RATE`: Baud rate for the serial connection. Defaults to `115200`.
 
 ## JSON-RPC API
 
